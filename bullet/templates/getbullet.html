@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GetBullet</title>
+</head>
+<body>
+<ul>
+    {% for bullet in bullets %}
+        <li>{{ bullet.id }}. {{ bullet.author }}-{{ bullet.message }}</li>
+    {% endfor %}
+    <a href="/setbullet">Send My Message</a>
+</ul>
+</body>
+</html>
