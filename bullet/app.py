@@ -19,7 +19,7 @@ db = SQLAlchemy(app)
 
 class BulletScreen(db.Model):
     id = Column(Integer, primary_key=True, autoincrement=True)
-    author = Column(String(30), default='未名')
+    author = Column(String(30), default='Noname')
     message = Column(Text)
 
 
